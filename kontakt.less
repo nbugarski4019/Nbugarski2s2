@@ -1,0 +1,128 @@
+@boja-upper-naslova = #fef713;
+@boja-naslova = #8effff;
+@boja-menija: #14a4f4;
+@hamburger-meni : #fe2513;
+@hamburger-meni-linija:#ffffff;
+
+.upper-naslov{
+  background-color : @boja-upper-naslova
+  }
+
+  .naslov{
+    width:1170px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: @boja-naslova;
+    min-height:100px;
+    padding-top:30px;
+        p{
+          text-align: center;
+          font-size:40px;
+    }
+  }
+
+  .main .mapa iframe{
+    min-height: 705px;
+    margin-top:50px;
+    margin-right:20px;
+  }
+
+  .forma {
+    margin-top:50px;
+    justify-content: center;
+    border:1px solid green;
+    display:grid;
+    width:70%;
+    justify-content: center;
+    label {
+        display: flex;
+        flex-direction: column;
+    .forma-input{
+      display:flex;
+      flex-direction: column;
+      width:100%;
+      justify-content: center;
+    }
+    select {
+        padding: 5px;
+        border-radius: 5px;
+        border: none;  
+    }
+  }
+}
+}  .main{
+  display:flex;
+  width:1400px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-evenly;
+}
+nav{
+  width:1170px;
+  margin-left: auto;
+  margin-right: auto;
+} 
+  ul{
+    list-style-type:  none;
+       li{
+    display: inline-block;
+    background-color: #14a4f4;
+    height: 40px;
+          a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    padding: 5 0 ;
+}
+       }
+      }
+
+      .hamburger
+{
+    width: 50px;
+    height: 50px;
+    background-color:@hamburger-meni;
+    padding:10px;  
+    display: none;
+     .line{
+    width: 35px;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 80%;
+    background-color: @hamburger-meni-linija;
+    height: 5px;
+}
+}
+
+@media screen and (max-width: 1405px) {
+  .main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+  }
+  .naslov{
+    width:100%;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .main .mapa iframe{
+    width:100%;
+  }
+    .nav
+    {
+        display: none;
+    }
+    ul li {
+        display: block;
+        width: 40%;
+    }
+    .hamburger
+    {
+        display: block;
+    }
+}
